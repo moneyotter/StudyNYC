@@ -91,6 +91,27 @@
     .tip-list li {
       margin-bottom: 10px;
     }
+    
+    /* Top navigation */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    .top-nav a {
+      background: rgba(255,255,255,0.12);
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
   </style>
 </head>
 <body>
@@ -98,6 +119,11 @@
     <h1>NYC Exams Study</h1>
     <p>Study resources for NYC Regents, SAT, AP, and school exams.</p>
   </header>
+  <div class="top-nav">
+    <a href="#aps">APS</a>
+    <a href="#regents">Regents</a>
+    <a href="#sat">SAT Prep</a>
+  </div>
 
   <main>
     <section>
@@ -105,24 +131,35 @@
       <p>Find official exam links, practice resources, and study tips so you can prepare with confidence. This page includes NYC DOE, Regents, College Board, and subject-specific practice pages.</p>
     </section>
 
-    <section>
-      <h2>Official Resources</h2>
+    <section id="regents">
+      <h2>Regents</h2>
       <div class="resource-list">
         <a href="https://www.schools.nyc.gov/learning/testing/ny-state-high-school-regents-exams" target="_blank" rel="noreferrer">NYC Public Schools Testing Info</a>
         <a href="https://www.nysed.gov/state-assessment/high-school-regents-examinations" target="_blank" rel="noreferrer">Past Regents Exams</a>
-        <a href="https://www.collegeboard.org/" target="_blank" rel="noreferrer">College Board Official Site</a>
+      </div>
+    </section>
+
+    <section id="aps">
+      <h2>APS</h2>
+      <div class="resource-list">
+        <a href="https://apcentral.collegeboard.org/" target="_blank" rel="noreferrer">AP Central</a>
+        <a href="https://www.khanacademy.org/" target="_blank" rel="noreferrer">Khan Academy</a>
+      </div>
+    </section>
+
+    <section id="sat">
+      <h2>SAT Prep</h2>
+      <div class="resource-list">
+        <a href="https://satsuite.collegeboard.org/" target="_blank" rel="noreferrer">Digital SAT Official Site</a>
+        <a href="https://www.khanacademy.org/test-prep/sat" target="_blank" rel="noreferrer">Khan Academy SAT Prep</a>
       </div>
     </section>
 
     <section>
-      <h2>Practice Links</h2>
-      <nav>
-        <ul>
-          <li><a href="https://www.nysedregents.org/geometryre/" target="_blank" rel="noreferrer">Geometry Practice</a></li>
-          <li><a href="https://www.nysedregents.org/EarthScience/" target="_blank" rel="noreferrer">Earth Science Practice</a></li>
-          <li><a href="https://www.nysedregents.org/earth_space_sciences/home.html" target="_blank" rel="noreferrer">Earth and Space Science Practice</a></li>
-        </ul>
-      </nav>
+      <h2>Other Resources</h2>
+      <div class="resource-list">
+        <a href="https://www.collegeboard.org/" target="_blank" rel="noreferrer">College Board Official Site</a>
+      </div>
     </section>
 
     <section>
